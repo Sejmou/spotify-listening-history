@@ -1,5 +1,4 @@
 <script lang="ts">
-	import LineChart from '$lib/components/LineChart.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import { Textarea } from '$lib/components/ui/textarea';
 	import { db } from '$lib/duckdb';
@@ -52,7 +51,7 @@
 	<title>My Spotify Data</title>
 </svelte:head>
 
-<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-4 max-w-screen-xl mx-auto">
 	<h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">Welcome!</h1>
 	<p class="leading-7">
 		Some day you will be able to import and explore the data from your personal Spotify data dump
@@ -108,13 +107,4 @@
 			</Card.Content>
 		</Card.Root>
 	{/if}
-	<!-- <Card.Root>
-		<Card.Header>
-			<Card.Title>Random Line Chart</Card.Title>
-			<Card.Description>This will be filled with some actual data soon. Maybe.</Card.Description>
-		</Card.Header>
-		<Card.Content class="flex flex-col gap-2">
-			<LineChart />
-		</Card.Content>
-	</Card.Root> -->
 </div>
